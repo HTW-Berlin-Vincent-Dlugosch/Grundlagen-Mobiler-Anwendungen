@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">EventMapJava</string>
+    <string name="event_name">Event</string>
+    <string name="date_picker_button">Pick date</string>
+    <string name="end_time_picker_button">Pick end time</string>
+    <string name="start_time_picker_button">Pick start time</string>
+    <string name="date">Date</string>
+    <string name="start_time">Start time</string>
+    <string name="end_time">End Time</string>
+    <string name="submit_event_button_text">Create Event</string>
+    <string name="first_name_input">First Name</string>
+    <string name="last_name_input">Last Name</string>
+    <string name="create_user_button_text">Create User</string>
+    <string name="map_mode_toggle_create">Switch to create mode</string>
+    <string name="map_mode_toggle_view">Switch to view mode</string>
+    <string name="delete_event_button_text">Delete Event</string>
+</resources>
