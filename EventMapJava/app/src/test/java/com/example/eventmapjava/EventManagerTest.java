@@ -18,15 +18,15 @@ public class EventManagerTest {
 
     @Before
     public void setUp() {
-        mgr.requestInsertion(new double[]{0.5, 0.5}, "Party1", new User(), LocalDateTime.now(), LocalDateTime.now());
-        mgr.requestInsertion(new double[]{0.5, 0.5}, "Party2", new User(), LocalDateTime.now(), LocalDateTime.now());
-        mgr.requestInsertion(new double[]{0.5, 0.5}, "Party3", new User(), LocalDateTime.now(), LocalDateTime.now());
+        mgr.requestInsertion(new double[]{0.5, 0.5}, "Party1",  LocalDateTime.now(), LocalDateTime.now());
+        mgr.requestInsertion(new double[]{0.5, 0.5}, "Party2",  LocalDateTime.now(), LocalDateTime.now());
+        mgr.requestInsertion(new double[]{0.5, 0.5}, "Party3",  LocalDateTime.now(), LocalDateTime.now());
     }
 
     @Test
     public void testIfEventListGrowsOnStoringEvents() {
         Assert.assertEquals(3, mgr.getEventList().size());
-        mgr.requestInsertion(new double[]{0.5, 0.5}, "Party", new User(), LocalDateTime.now(), LocalDateTime.now());
+        mgr.requestInsertion(new double[]{0.5, 0.5}, "Party",  LocalDateTime.now(), LocalDateTime.now());
         Assert.assertEquals(4, mgr.getEventList().size());
     }
 
